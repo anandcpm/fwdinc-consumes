@@ -4,7 +4,7 @@ node {
     }
     stage ('build') {
         // Copies the artifacts of plugin-a/master (plugin-a.txt) in to this workspace.
-        copyArtifacts projectName: 'fwdinc-produces'
+        copyArtifacts projectName: 'fwdinc-produces/master'
 
         // Notify DevOptics that this run consumed plugin-a.txt.
         gateConsumesArtifact file: 'plugin-a.txt'
